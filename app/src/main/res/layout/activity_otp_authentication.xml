@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OtpAuthenticationActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/security_shield"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_otp_heading"
+        android:layout_below="@+id/imageView"
+        android:padding="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/getOtp"
+        android:layout_width="match_parent"
+        android:hint="Enter your OTP"
+        android:layout_height="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:maxLines="1"
+        android:layout_below="@+id/textView" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/changeNumber"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="don't received? change your number"
+        android:layout_below="@+id/getOtp"
+        android:padding="10dp"/>
+
+    <Button
+        android:text="VERIFY"
+        android:layout_marginTop="10dp"
+        android:background="#56FFEE"
+        android:id="@+id/verify_btn"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/changeNumber"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/verify_btn"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

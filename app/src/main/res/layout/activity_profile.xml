@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="#075e54"
+        android:id="@+id/toolbarOfViewProfile">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backButtonOfViewProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/myAppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/backButtonOfViewProfile"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userImage_card_view"
+        app:cardCornerRadius="110dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/toolbarOfViewProfile">
+
+        <ImageView
+            android:id="@+id/viewUserImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_person_24"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+<!--        23:50-->
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_alignLeft="@+id/viewUserName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/viewUserName"
+        android:layout_marginRight="2dp"
+        android:layout_below="@+id/userImage_card_view"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"/>
+
+
+    <EditText
+        android:id="@+id/viewUserName"
+        android:layout_width="wrap_content"
+        android:hint="@string/enter_your_name"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:layout_height="50dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:layout_below="@+id/userImage_card_view"
+        android:inputType="textPersonName"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/mMoveToUpdateProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Want to edit a profile ?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/viewUserName"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

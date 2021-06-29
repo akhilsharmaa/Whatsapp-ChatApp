@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/security_shield"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_heading_of_otp"
+        android:layout_below="@+id/imageView"
+        android:padding="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/countryCodePicker"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:ccp_areaCodeDetectedCountry="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"/>
+
+    <EditText
+        android:id="@+id/getPhoneNumber"
+        android:layout_width="match_parent"
+        android:hint="Enter your number"
+        android:layout_height="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:maxLines="1"
+        android:layout_below="@+id/countryCodePicker" />
+
+    <Button
+        android:text="SEND"
+        android:layout_marginTop="10dp"
+        android:background="#56FFEE"
+        android:id="@+id/sendOtpButton"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/getPhoneNumber"/>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/sendOtpButton"
+        android:visibility="invisible" />
+
+</RelativeLayout>

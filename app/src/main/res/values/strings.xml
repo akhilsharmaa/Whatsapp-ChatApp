@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="hint_heading_of_otp">Chat App will send otp to your app to your entered number</string>
+    <string name="set_your_profile">Set your profile</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="enter_otp_heading">Enter the OTP which is send to your mobile number</string>
+</resources>

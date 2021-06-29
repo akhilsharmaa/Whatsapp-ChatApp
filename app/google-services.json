@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "553306580124",
+    "firebase_url": "https://fir-usingflutter-default-rtdb.firebaseio.com",
+    "project_id": "fir-usingflutter",
+    "storage_bucket": "fir-usingflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553306580124:android:719e954997d0d6bf2bb959",
+        "android_client_info": {
+          "package_name": "com.example.a2ndtryoffirebasetutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553306580124-b8iq6fqtv0cpmk6llp5bedi1p775j94f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_bye-_r1DXQfhmsOob7Lu3txCwYXM4zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553306580124-b8iq6fqtv0cpmk6llp5bedi1p775j94f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553306580124:android:5a0db47f234dab902bb959",
+        "android_client_info": {
+          "package_name": "com.example.classsync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553306580124-b8iq6fqtv0cpmk6llp5bedi1p775j94f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_bye-_r1DXQfhmsOob7Lu3txCwYXM4zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553306580124-b8iq6fqtv0cpmk6llp5bedi1p775j94f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553306580124:android:252b73d325145c312bb959",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553306580124-b8iq6fqtv0cpmk6llp5bedi1p775j94f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_bye-_r1DXQfhmsOob7Lu3txCwYXM4zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553306580124-b8iq6fqtv0cpmk6llp5bedi1p775j94f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
